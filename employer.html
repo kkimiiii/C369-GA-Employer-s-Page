@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer's Job Posting Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Publish a Job</h1>
+        <form action="/submit-job" method="post">
+            <div class="form-group">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+            <div class="form-group">
+                <label for="pay">Pay:</label>
+                <input type="text" id="pay" name="pay" required>
+            </div>
+            <div class="form-group">
+                <label for="job-description">Job Description:</label>
+                <textarea id="job-description" name="job-description" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="payout-details">Payout Details:</label>
+                <textarea id="payout-details" name="payout-details" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Publish Job</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
